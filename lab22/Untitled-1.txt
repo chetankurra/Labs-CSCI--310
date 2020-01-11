@@ -1,0 +1,43 @@
+/*
+Graph &operator+(Graph &G1, Graph &G2){
+    int flag=0;
+ std::set<unsigned>::iterator it, it2, it3;
+
+    for (it = G2.V.begin(); it != G2.V.end(); ++it) //  Iterator to print the vertices
+    {
+        for (it2 = G1.V.begin(); it2 != G1.V.end(); ++it2) //  Iterator to print the vertices
+        {
+
+            if (*it == *it2)
+            {
+                   G1.V.insert(*it);
+                   G1.V.insert(*it2);
+               
+            }
+        }
+    }
+      std::multimap<unsigned, unsigned>::iterator itr, itr1;
+   flag = 0;
+
+    // Iterator to find union and add to final edge multimap
+    for (itr = G2.E.begin(); itr != G2.E.end(); ++itr)
+    {                                                         //  Iterator to print the edges
+        for (itr1 = G1.E.begin(); itr1 != G1.E.end(); ++itr1) //  Iterator to print the edges
+        {
+            if ((*itr).first == (*itr1).first && (*itr).second == (*itr1).second)
+            {
+                flag = 1;
+            }
+        }
+        if (flag == 0)
+        {
+            G1.E.insert(pair<unsigned, unsigned>((*itr).first, (*itr).second)); //      Insert only if not present in the first graph
+        }
+        else
+        {
+            flag = 0;
+        }
+    }
+
+    return G1; //  Return final graph
+}*/

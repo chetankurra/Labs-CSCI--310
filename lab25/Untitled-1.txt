@@ -1,0 +1,26 @@
+11
+alpha
+charlie
+delta
+bravo
+foxtrot
+echo
+india
+hotel
+juliett
+golf
+kilo
+13
+alpha charlie
+alpha delta
+bravo charlie
+charlie delta
+charlie foxtrot
+echo bravo
+echo foxtrot
+foxtrot golf
+hotel echo
+india echo
+juliett kilo
+hotel juliett
+india kilo
